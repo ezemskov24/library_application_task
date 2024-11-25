@@ -38,7 +38,7 @@ def find_books_in_library(library: Library) -> None:
     Args:
         library (Library): The library instance to search in.
     """
-    valid_fields = {"title", "author", "year"}  # Допустимые поля для поиска
+    valid_fields = {"title", "author", "year"}
     field = input("Search by (title/author/year): ").lower()
 
     if field not in valid_fields:
